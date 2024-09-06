@@ -470,7 +470,7 @@ img {
  "phone"
  "message"; }
   #contact-b div {
-    color: white;
+    color: white; !important
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px #555 solid; }
