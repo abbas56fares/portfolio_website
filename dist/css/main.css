@@ -403,7 +403,7 @@ img {
   text-align: center; }
 
 #contact-b div:nth-child(2) p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: sans-serif; }
 
 #contact-c h1 {
   text-align: center;
@@ -444,13 +444,23 @@ img {
     #main-nav li {
       padding: 1rem; }
   #header-home {
-    height: 10rem;
-    border-bottom: 3px solid #ffbc00;
-    background-position: 20% 30%; }
+    position: relative;
+    height: 70vh;
+    border-bottom: 3px solid #ffbc00; }
     #header-home .header-content {
       display: none; }
+    #header-home #logo {
+      scale: 1.5;
+      position: absolute;
+      bottom: 10px; }
   #header-inner {
-    height: 10rem; }
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+    height: 70vh;
+    position: relative; }
+    #header-inner #logo {
+      scale: 1.5;
+      position: absolute;
+      bottom: 10px; }
   #home-a .specials,
   #home-b .stats,
   #home-c .process,
@@ -467,11 +477,11 @@ img {
   #home-b .stats div {
     padding: 2rem 0 1rem 0; }
   #about-a .about-info {
-    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
+    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
   #about-c {
     display: none; }
   #contact-a .text-fields {
-    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
   #contact-b div {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
