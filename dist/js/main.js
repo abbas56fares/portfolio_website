@@ -63,3 +63,17 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+window.addEventListener('scroll', () => {
+  const sectionTop = document.querySelectorAll('section').forEach((section) => {
+    if (
+      section.getBoundingClientRect().top < window.innerHeight - 50 ||
+      section.getBoundingClientRect().top <
+        document.documentElement.innerHeight - 50
+    ) {
+      section.classList.remove('hide');
+    } else {
+      section.classList.add('hide');
+    }
+  });
+});
